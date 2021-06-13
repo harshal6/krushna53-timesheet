@@ -1,0 +1,23 @@
+uuid: dba8a1e6-881d-4e10-96c2-01d4a4f4a06a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_github_url
+  module:
+    - link
+    - user
+id: user.user.field_github_url
+field_name: field_github_url
+entity_type: user
+bundle: user
+label: 'Github Url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

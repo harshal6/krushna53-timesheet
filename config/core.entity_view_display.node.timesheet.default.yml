@@ -1,0 +1,90 @@
+uuid: b3ce3def-9d0c-4a8f-9b87-8878f9fcddbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.timesheet.body
+    - field.field.node.timesheet.field_date
+    - field.field.node.timesheet.field_file
+    - field.field.node.timesheet.field_hours_worked
+    - field.field.node.timesheet.field_project_name
+    - field.field.node.timesheet.field_screenshots
+    - field.field.node.timesheet.field_tasks
+    - node.type.timesheet
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.timesheet.default
+targetEntityType: node
+bundle: timesheet
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 1
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_file:
+    weight: 7
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_hours_worked:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_project_name:
+    weight: 3
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_screenshots:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_tasks:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

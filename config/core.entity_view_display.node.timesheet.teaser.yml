@@ -1,0 +1,42 @@
+uuid: 94f08f6a-ed83-4fa6-b3f9-8bb49578321c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timesheet.body
+    - field.field.node.timesheet.field_date
+    - field.field.node.timesheet.field_file
+    - field.field.node.timesheet.field_hours_worked
+    - field.field.node.timesheet.field_project_name
+    - field.field.node.timesheet.field_screenshots
+    - field.field.node.timesheet.field_tasks
+    - node.type.timesheet
+  module:
+    - text
+    - user
+id: node.timesheet.teaser
+targetEntityType: node
+bundle: timesheet
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_file: true
+  field_hours_worked: true
+  field_project_name: true
+  field_screenshots: true
+  field_tasks: true

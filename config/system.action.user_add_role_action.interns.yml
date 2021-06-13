@@ -1,0 +1,14 @@
+uuid: afc750df-293a-4ba9-8980-9769db45126f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.interns
+  module:
+    - user
+id: user_add_role_action.interns
+label: 'Add the Interns role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: interns

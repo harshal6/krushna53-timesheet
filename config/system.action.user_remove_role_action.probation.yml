@@ -1,0 +1,14 @@
+uuid: 378a6f90-3d86-4f24-8ce2-fb5958949b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.probation
+  module:
+    - user
+id: user_remove_role_action.probation
+label: 'Remove the Probation role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: probation

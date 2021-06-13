@@ -1,0 +1,27 @@
+uuid: 08c28f44-a80c-41c7-89cd-380e47e9c546
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_resume
+  module:
+    - file
+    - user
+id: user.user.field_resume
+field_name: field_resume
+entity_type: user
+bundle: user
+label: Resume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

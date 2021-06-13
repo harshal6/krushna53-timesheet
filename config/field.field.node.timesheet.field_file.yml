@@ -1,0 +1,27 @@
+uuid: 3b3a8120-3774-4611-9a4d-7950f9e153cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.timesheet
+  module:
+    - file
+id: node.timesheet.field_file
+field_name: field_file
+entity_type: node
+bundle: timesheet
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

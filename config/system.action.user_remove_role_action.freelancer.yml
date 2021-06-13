@@ -1,0 +1,14 @@
+uuid: 25c221b1-e256-4092-9899-d255bffc8d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.freelancer
+  module:
+    - user
+id: user_remove_role_action.freelancer
+label: 'Remove the freelancer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: freelancer

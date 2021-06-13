@@ -1,0 +1,14 @@
+uuid: db38f320-1334-4305-82af-97438397dd04
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.probation
+  module:
+    - user
+id: user_add_role_action.probation
+label: 'Add the Probation role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: probation

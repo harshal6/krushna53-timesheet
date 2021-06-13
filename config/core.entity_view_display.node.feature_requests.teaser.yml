@@ -1,0 +1,32 @@
+uuid: 69cdafe5-efd7-4070-bef6-323ed87ec892
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.feature_requests.body
+    - field.field.node.feature_requests.field_related_tasks
+    - node.type.feature_requests
+  module:
+    - text
+    - user
+id: node.feature_requests.teaser
+targetEntityType: node
+bundle: feature_requests
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_related_tasks: true

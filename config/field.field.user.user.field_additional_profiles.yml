@@ -1,0 +1,23 @@
+uuid: ce132fad-c8b6-4139-bbb4-988b704aca10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_additional_profiles
+  module:
+    - link
+    - user
+id: user.user.field_additional_profiles
+field_name: field_additional_profiles
+entity_type: user
+bundle: user
+label: 'Additional Profiles'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

@@ -1,0 +1,29 @@
+uuid: 52b632a8-0001-4314-b504-f56734621bd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tasks
+    - node.type.tasks
+    - node.type.timesheet
+id: node.timesheet.field_tasks
+field_name: field_tasks
+entity_type: node
+bundle: timesheet
+label: Tasks
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tasks: tasks
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

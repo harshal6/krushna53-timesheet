@@ -1,0 +1,23 @@
+uuid: 6872948f-de05-4536-bfeb-b7357ba94bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hours_worked
+    - node.type.timesheet
+id: node.timesheet.field_hours_worked
+field_name: field_hours_worked
+entity_type: node
+bundle: timesheet
+label: 'Hours Worked'
+description: 'Please provide a breakup of tasks in description'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: !!float 8
+  prefix: ''
+  suffix: ''
+field_type: decimal

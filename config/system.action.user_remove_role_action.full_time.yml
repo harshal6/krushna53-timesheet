@@ -1,0 +1,14 @@
+uuid: 770c699e-1a2c-4ad7-a2e0-6960b870e7ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.full_time
+  module:
+    - user
+id: user_remove_role_action.full_time
+label: 'Remove the Full Time role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: full_time

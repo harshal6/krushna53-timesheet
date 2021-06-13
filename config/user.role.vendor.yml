@@ -1,0 +1,9 @@
+uuid: 14cba6f5-d590-4756-8604-2b7740711b1d
+langcode: en
+status: true
+dependencies: {  }
+id: vendor
+label: Vendor
+weight: 8
+is_admin: null
+permissions: {  }

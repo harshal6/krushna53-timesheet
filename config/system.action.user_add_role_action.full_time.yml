@@ -1,0 +1,14 @@
+uuid: 36d84b50-7eba-480d-802f-ce12b7ca4671
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.full_time
+  module:
+    - user
+id: user_add_role_action.full_time
+label: 'Add the Full Time role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: full_time

@@ -1,0 +1,23 @@
+uuid: 69b54f7c-4e62-460a-8a5c-49ced09ff215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.timesheet
+  module:
+    - text
+id: node.timesheet.body
+field_name: body
+entity_type: node
+bundle: timesheet
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

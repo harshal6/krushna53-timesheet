@@ -1,0 +1,9 @@
+uuid: 16a7cd73-8d04-4211-99b0-26c72f7befed
+langcode: en
+status: true
+dependencies: {  }
+id: owner
+label: Owner
+weight: 7
+is_admin: null
+permissions: {  }

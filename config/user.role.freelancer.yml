@@ -1,0 +1,9 @@
+uuid: 3c5360f5-858f-4e25-a240-4d0bb4b1a6a2
+langcode: en
+status: true
+dependencies: {  }
+id: freelancer
+label: Freelancer
+weight: 3
+is_admin: null
+permissions: {  }

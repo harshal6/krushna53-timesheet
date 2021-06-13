@@ -1,0 +1,29 @@
+uuid: f24eb38a-a3a3-4081-8d5a-2d3e3df2e9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_name
+    - node.type.project
+    - node.type.timesheet
+id: node.timesheet.field_project_name
+field_name: field_project_name
+entity_type: node
+bundle: timesheet
+label: 'Project Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

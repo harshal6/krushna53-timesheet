@@ -1,0 +1,29 @@
+uuid: 2d7620ac-7019-4204-97fe-1b96398c010a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_tasks
+    - node.type.feature_requests
+    - node.type.tasks
+id: node.feature_requests.field_related_tasks
+field_name: field_related_tasks
+entity_type: node
+bundle: feature_requests
+label: 'Related Tasks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tasks: tasks
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

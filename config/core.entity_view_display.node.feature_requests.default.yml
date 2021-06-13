@@ -1,0 +1,37 @@
+uuid: 4a7547bc-509b-459f-8924-efad953ef979
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.feature_requests.body
+    - field.field.node.feature_requests.field_related_tasks
+    - node.type.feature_requests
+  module:
+    - text
+    - user
+id: node.feature_requests.default
+targetEntityType: node
+bundle: feature_requests
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_related_tasks:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

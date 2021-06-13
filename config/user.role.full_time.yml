@@ -1,0 +1,9 @@
+uuid: 2202b171-2608-43d1-ac21-d7d1f9f73681
+langcode: en
+status: true
+dependencies: {  }
+id: full_time
+label: 'Full Time'
+weight: 4
+is_admin: null
+permissions: {  }

@@ -1,0 +1,24 @@
+uuid: 94d2931c-e636-4f63-87a0-f1fb516683cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_consent
+  module:
+    - user
+id: user.user.field_consent
+field_name: field_consent
+entity_type: user
+bundle: user
+label: 'I consent to share this information '
+description: 'This information will be only for internal use and not shared with any third party without your consent.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
